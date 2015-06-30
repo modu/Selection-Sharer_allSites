@@ -4,13 +4,13 @@ s.src = chrome.extension.getURL('selection-sharer.js');
 var ss = document.createElement("link");
 ss.type = "text/css";
 ss.rel = "stylesheet";
-ss.href = "selection-sharer.css";
+ss.href = "/selection-sharer.css";
 document.getElementsByTagName("head")[0].appendChild(ss);
 
- window.onload = function() {
+window.onload = function() {
     var s = document.createElement('script');
     s.type = 'text/javascript';
-    var code = 'alert("hello world!");';
+    var code = '$(\'p\').selectionSharer()';
     try {
       s.appendChild(document.createTextNode(code));
       document.body.appendChild(s);

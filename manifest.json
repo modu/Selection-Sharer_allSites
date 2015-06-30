@@ -3,7 +3,7 @@
     "version": "1.0",
     "manifest_version": 2,
     "content_scripts": [{
-        "js":["jquery-2.1.4.min.js", "selection-sharer.js"],
+        "js":["jquery-2.1.4.min.js", "contentscript.js"],
 	"cs": ["selection-sharer.css"],
         "matches": ["<all_urls>"] //"http://*/*"
 	
